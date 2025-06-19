@@ -47,6 +47,7 @@ setup(
             "vibe=vibe_cli:main",
         ],
     },
+    py_modules=["vibe_cli", "vibe_coding_ai_system"],
     include_package_data=True,
     package_data={
         "": ["*.md", "*.txt", "*.json"],
