@@ -18,8 +18,16 @@ VibeCoding CLI, herhangi bir klasörde `vibe init` komutu ile tam kapsamlı yaz�
 #### Windows:
 ```batch
 # Proje klasöründe:
-install_global.bat
+SUPER_INSTALL.bat
 ```
+
+Bu sistem otomatik olarak:
+- ✅ Önceki kurulum kalıntılarını temizler
+- ✅ pip dependency hatalarını çözer
+- ✅ Bozuk paketleri (~andas) düzeltir
+- ✅ Bağımlılıkları güvenli şekilde kurar
+- ✅ VibeCoding CLI'yi başarıyla kurar
+- ✅ Kurulumu test eder ve doğrular
 
 #### Linux/Mac:
 ```bash

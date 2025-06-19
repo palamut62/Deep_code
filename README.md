@@ -13,14 +13,22 @@ Claude Code benzeri terminal uygulaması. DeepSeek ve Gemini AI kullanarak herha
 
 ## 🛠️ Kurulum
 
-### Otomatik Kurulum (Önerilen)
+### 🚀 Süper Kurulum (Tüm Sorunları Çözer)
 
 #### Windows:
 ```batch
-# install_global.bat dosyasını çift tıklayın
+# SUPER_INSTALL.bat dosyasını çift tıklayın
 # veya PowerShell'de:
-.\install_global.bat
+.\SUPER_INSTALL.bat
 ```
+
+Bu sistem otomatik olarak:
+- ✅ Önceki kurulum kalıntılarını temizler
+- ✅ pip dependency hatalarını çözer  
+- ✅ Bozuk paketleri (~andas) düzeltir
+- ✅ Bağımlılıkları güvenli şekilde kurar
+- ✅ VibeCoding CLI'yi başarıyla kurar
+- ✅ Kurulumu test eder ve doğrular
 
 #### Linux/Mac:
 ```bash
@@ -167,6 +175,17 @@ my-project/
 - **Sürdürülebilir**: VibeCoding metodolojisi ile kaliteli kod
 
 ## 🔧 Sorun Giderme
+
+### pip Dependency Resolution Hatası
+```bash
+# Süper kurulum (tüm sorunları çözer)
+SUPER_INSTALL.bat
+
+# Manuel çözüm
+pip uninstall vibe-coding-cli -y
+pip cache purge
+pip install -e . --use-deprecated=legacy-resolver
+```
 
 ### Komut Bulunamıyor
 ```bash
