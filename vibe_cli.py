@@ -363,6 +363,14 @@ VibeCoding CLI ile oluşturulan projeler için destek: https://github.com/your-r
         
         panel = Panel(help_text, border_style="blue", padding=(1, 2))
         self.console.print(panel)
+    
+    async def run_full_system(self):
+        """Tam VibeCoding AI sistemini başlat"""
+        # VibeCoding AI System'i import et ve başlat
+        from vibe_coding_ai_system import VibeCodingAISystem
+        
+        ai_system = VibeCodingAISystem()
+        await ai_system.run()
 
 def main():
     """Ana CLI fonksiyonu"""
@@ -394,10 +402,9 @@ def main():
     
     cli = VibeCodingCLI()
     
-    # Komut yok ise yardım göster
+    # Komut yok ise tam AI sistemini başlat
     if not args.command:
-        cli.display_banner()
-        cli.display_help()
+        asyncio.run(cli.run_full_system())
         return
     
     # Init komutu
